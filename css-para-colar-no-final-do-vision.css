@@ -1,0 +1,101 @@
+/* ============================================================
+   CARDS DE JOGO DENTRO DO HERO  (colar no FINAL do vision.css)
+   Hero vira 2 colunas: texto a esquerda, cards empilhados a direita.
+   ============================================================ */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 400px);
+  gap: 44px;
+  align-items: center;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 760px;
+}
+
+.hero-games {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  gap: 12px;
+  align-content: center;
+}
+
+.hero-games .game-card {
+  min-height: 96px;
+}
+
+.hero-games .game-card::before {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.88) 34%, rgba(0, 0, 0, 0.42)),
+    linear-gradient(90deg, rgba(42, 255, 138, 0.14), transparent 58%);
+}
+
+.hero-games .game-card-content {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 14px;
+}
+
+.hero-games .game-card-text {
+  display: grid;
+  justify-items: start;
+  gap: 7px;
+  min-width: 0;
+}
+
+.hero-games .game-card h3 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.hero-games .game-card .release {
+  min-height: 22px;
+  padding: 0 8px;
+  font-size: 10px;
+}
+
+.hero-games .game-card button {
+  width: auto;
+  min-height: 38px;
+  padding: 0 18px;
+  flex: 0 0 auto;
+  font-size: 12px;
+}
+
+/* Telas medias: hero volta a 1 coluna, cards ficam abaixo do texto */
+@media (max-width: 1040px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hero-games {
+    width: 100%;
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero {
+    align-items: center;
+    padding-bottom: 118px;
+  }
+
+  .hero-games .game-card {
+    min-height: 84px;
+  }
+
+  .hero-games .game-card h3 {
+    font-size: 19px;
+  }
+}
