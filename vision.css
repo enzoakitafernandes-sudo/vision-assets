@@ -742,7 +742,7 @@ main > .shop-section:first-child .game-grid {
 .catalog-body[data-active-game="buildx"] {
   background:
     linear-gradient(160deg, rgba(0, 0, 0, 0.38), rgba(5, 5, 5, 0.52) 55%, rgba(0, 0, 0, 0.70) 100%),
-    url("https://enzoakitafernandes-sudo.github.io/vision-assets/site/buildx-bg.webp") center center / cover fixed,
+    url("https://enzoakitafernandes-sudo.github.io/vision-assets/buildx-bg.webp") center center / cover fixed,
     #080808 !important;
 }
 
@@ -4242,7 +4242,7 @@ input[type="search"] {
 .catalog-body[data-active-game="buildx"] {
   background:
     linear-gradient(160deg, rgba(0, 0, 0, 0.42), rgba(5, 5, 5, 0.62) 56%, rgba(0, 0, 0, 0.88) 100%),
-    url("https://enzoakitafernandes-sudo.github.io/vision-assets/site/buildx-bg.webp") center center / cover fixed,
+    url("https://enzoakitafernandes-sudo.github.io/vision-assets/buildx-bg.webp") center center / cover fixed,
     #070707 !important;
 }
 
